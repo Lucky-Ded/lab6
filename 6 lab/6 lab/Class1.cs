@@ -20,16 +20,9 @@ namespace _6_lab
             Assert.AreEqual("Сибирский государственный университет телекоммуникаций и информатики", webDriver.Title);
            
         }
-        [TestCase]
-        public void sibsutis_request()
-        {
-            webDriver.Url = "https://sibsutis.ru/";
-            IWebElement search = webDriver.FindElement(By.XPath("//*[@id=\"mainMenu\"]/a[2]"));
-            //search.SendKeys("Функциональное тестирование");
-            search.Click();
-            webDriver.Close();
+       
 
-        }
+        
         [TestCase]
         public void buttontest()
         {
